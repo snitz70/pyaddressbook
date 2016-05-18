@@ -4,15 +4,17 @@ Feature: Addressbook
   As a user
   We'll start using an addressbook
 
-  @wip
+
   Scenario: Add addressbook
     Given I want to use an addressbook
     When I create a new addressbook
     Then I expect the new one to be created
 
-  Scenario: Check if addrssbook name exists
-    Given I want to use an addressbook
-    When I create a new addressbook
-    And addressbook already exists
+  @wip
+  Scenario: Add addressbook if existing
+    Given I want to create a new addressbook
+    When addressbook already exists
     Then I expect that the addressbook will not get created
+
+  
 
