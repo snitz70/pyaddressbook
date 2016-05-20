@@ -16,5 +16,5 @@ Feature: Addressbook
     When addressbook already exists
     Then I expect that the addressbook will not get created
 
-  
+
 
